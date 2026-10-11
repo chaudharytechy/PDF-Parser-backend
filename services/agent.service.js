@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-import { listFiles, searchPdf } from "../tools/listFiles.js";
+import { listFiles, searchPdf } from "../tools/listfiles.js";
 import { createMcpClient } from "../mcp/mcpClient.js";
 // import { searchPdf } from "../tools/searchPdf.js";
 // import { getFile } from "../tools/getFile.js";
