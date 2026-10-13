@@ -20,11 +20,21 @@ app.use(express.json());
 connectDB()
 
 
+// // CORS
+// app.use(cors({
+//   origin: "http://localhost:5173",https://pdf-parser-frontends.onrender.com/
+//   credentials: true,
+// }));
 // CORS
-app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://pdf-parser-frontends.onrender.com",
+    ],
+    credentials: true,
+  })
+);
 
 // Global Routes
 app.use("/api/upload", pdfRoute)
